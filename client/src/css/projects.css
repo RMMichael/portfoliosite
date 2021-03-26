@@ -1,0 +1,66 @@
+.mainBox {
+    margin-bottom: 50px;
+    margin-top: 40px;
+    padding-right: 128px;
+    padding-left: 128px;
+}
+
+.mainListItem {
+    padding: 10px 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px 10px;
+
+}
+.projectListBox {
+    margin-bottom: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 40px;
+    display: grid;
+    grid-auto-rows:  1fr;
+    grid-template-columns: 1fr 1fr;
+
+}
+.outerListItemBox {
+    margin-bottom: 5px;
+}
+.projectTitle {
+    font-size: 1.3rem;
+    font-weight: 900;
+    color: cornflowerblue;
+    margin-top: 5px;
+    margin-left: 4px;
+    margin-right: 2px;
+    margin-bottom: 5px;
+}
+.projectDescription {
+    font-size: 1rem;
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-bottom: 10px;
+}
+.projectComponents {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: darkslategrey;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+@media screen and (max-width: 576px) {
+    .projectListBox{
+        grid-template-columns: 1fr;
+        grid-template-rows: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+@media screen and (max-width: 950px) {
+    .projectListBox{
+        grid-template-columns: 1fr;
+        grid-template-rows: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
