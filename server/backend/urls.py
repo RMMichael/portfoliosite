@@ -26,6 +26,6 @@ def catchall(request):
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('gitsub/api/', include('gitsub.urls')),
+    path('api/', include('gitsub.urls')),
     re_path(r'.*', catchall)
 ]

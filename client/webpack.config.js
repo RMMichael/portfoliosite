@@ -7,16 +7,16 @@ module.exports = {
     devtool: 'inline-source-map',
     devServer: {
         contentBase: './public/static',
-        contentBasePublicPath: '/gitsub/',
-        publicPath: '/gitsub/',
+        contentBasePublicPath: '/',
+        publicPath: '/',
         openPage: 'gitsub',
         historyApiFallback: {
             disableDotRule: true,
-            index: '/gitsub/index.html'
+            index: '/index.html'
         },
         proxy: {
             //insert api path
-            '/gitsub/api': 'http://127.0.0.1:8000'
+            '/api': 'http://127.0.0.1:8000'
         },
         port: 8081
     },

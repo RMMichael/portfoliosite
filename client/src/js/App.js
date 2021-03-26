@@ -19,7 +19,7 @@ function App() {
   return (
     <>
       {/*<CssBaseline />*/}
-      <BrowserRouter basename={rootPath}>
+      <BrowserRouter>
           <Switch>
             <Route exact path="/">
               <HomePage/>
