@@ -1,0 +1,10 @@
+**.DS_Store
+**.idea/
+**node_modules/*
+**.gradle
+**/gradle/*
+**/.mvn
+**/target
+**/venv/*
+**/public/*
+server/Projects/*
