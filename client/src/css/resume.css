@@ -53,3 +53,26 @@ h4 {
         padding-left: unset;
     }
 }
+.alignBox {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 15px;
+}
+.lefta {
+    /*float: left;*/
+    /*width: 50%*/
+}
+.righta {
+    /*float: right;*/
+    /*text-align: right;*/
+    /*width: 50%;*/
+}
+
+.firstp {
+    margin: 0;
+    font-size: 1rem;
+    text-align: center;
+}
+.fs {
+    font-size: 1.2rem;
+}

@@ -17,4 +17,4 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'backend.settings')
 
 application = get_wsgi_application()
 
-application = WhiteNoise(application, root='../client/public/static', prefix='gitsub', index_file=True)
+application = WhiteNoise(application, root='../client/public/static', index_file=True)

@@ -11,6 +11,20 @@ import rstyle from '../css/resume.css'
 import fstyle from '../css/framestyle.css'
 import {TopBar} from "./TopBar";
 
+const ButtonMailto = ({ mailto, label }) => {
+  return (
+      <Link
+          to='#'
+          onClick={(e) => {
+            window.location = mailto;
+            e.preventDefault();
+          }}
+      >
+        {label}
+      </Link>
+  );
+};
+
 function Resume() {
 
   return (
@@ -22,6 +36,8 @@ function Resume() {
           <div className={rstyle.topName}>
             Richard Michael
           </div>
+          <p style={{alignItems: "center"}}>(415) 706 &ndash; 5054 | <ButtonMailto label="rmmichae@uci.edu" mailto="mailto:rmmichae@uci.edu" /> | <a href={"rickmichael.me"}>rickmichael.me</a> | <a href={"linkedin.com/in/richard-michael-401957b9"}>linkedin</a></p>
+          <p><strong><u>Education&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </u></strong></p>
           <div className={rstyle.topInfo}>
             <a href="mailto:rmmichae@uci.edu">
               rmmichae@uci.edu
@@ -29,11 +45,21 @@ function Resume() {
             | (415) 706 - 5054
           </div>
           <div>
+            <p className={rstyle.firstp}><span className={rstyle.fs}>Richard Michael</span></p>
             <h3>Education</h3>
-            <h4>University of California Irvine</h4>
-            <p>
-              Bachelor of Science, Computer Science, June 2020, (gpa: 3.45)
-            </p>
+            <div className={rstyle.alignBox}>
+            <h4 className={rstyle.lefta}>University of California Irvine</h4>
+            <span className={rstyle.righta}>Irvine, CA</span>
+            </div>
+            <div className={rstyle.alignBox}>
+              <span className={rstyle.lefta}>
+                Bachelor of Science, Computer Science (gpa: 3.55)
+              </span>
+              <span>
+
+              </span>
+            </div>
+
             <h4>Notable Courses</h4>
             <p>
               Computer Networks, Database Management, Compilers & Interpreters, Artificial Intelligence, Operating Systems,
