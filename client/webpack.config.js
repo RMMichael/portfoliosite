@@ -2,14 +2,13 @@ var path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const postcssPresetEnv = require('postcss-preset-env');
 
-module.exports = {
+module.exports = (env) => ({
     entry: './src/js/index.js',
     devtool: 'inline-source-map',
     devServer: {
         contentBase: './public/static',
         contentBasePublicPath: '/',
         publicPath: '/',
-        openPage: 'gitsub',
         historyApiFallback: {
             disableDotRule: true,
             index: '/index.html'
@@ -21,7 +20,7 @@ module.exports = {
         port: 8081
     },
     cache: true,
-    mode: 'development',
+    mode: env.NODE_ENV,
     output: {
         path: path.resolve(__dirname, './public/static'),
         filename: 'index.js'
@@ -112,4 +111,4 @@ module.exports = {
             }
         ]
     }
-};
+});

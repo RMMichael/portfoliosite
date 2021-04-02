@@ -24,6 +24,8 @@ p {
 h3 {
     font-size: 1.5rem;
     font-weight: 600;
+    border-bottom: 1px solid black;
+    width: 100%;
 }
 h4 {
     font-size: 1.3rem;
@@ -44,6 +46,8 @@ h4 {
         padding-left: 16px;
     }
     p {
+        font-size: 4rem;
+        font-weight: bolder;
         padding-left: 15px;
     }
     h4 {
@@ -57,22 +61,10 @@ h4 {
     display: flex;
     justify-content: space-between;
     padding-right: 15px;
-}
-.lefta {
-    /*float: left;*/
-    /*width: 50%*/
-}
-.righta {
-    /*float: right;*/
-    /*text-align: right;*/
-    /*width: 50%;*/
+    height: 30px;
 }
 
-.firstp {
-    margin: 0;
-    font-size: 1rem;
-    text-align: center;
-}
-.fs {
-    font-size: 1.2rem;
+.titleinfo {
+    font-size: 1.1rem;
+    font-weight: 500;
 }

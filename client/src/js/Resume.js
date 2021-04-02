@@ -36,85 +36,138 @@ function Resume() {
           <div className={rstyle.topName}>
             Richard Michael
           </div>
-          <p style={{alignItems: "center"}}>(415) 706 &ndash; 5054 | <ButtonMailto label="rmmichae@uci.edu" mailto="mailto:rmmichae@uci.edu" /> | <a href={"rickmichael.me"}>rickmichael.me</a> | <a href={"linkedin.com/in/richard-michael-401957b9"}>linkedin</a></p>
-          <p><strong><u>Education&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </u></strong></p>
           <div className={rstyle.topInfo}>
-            <a href="mailto:rmmichae@uci.edu">
-              rmmichae@uci.edu
-            </a>
-            | (415) 706 - 5054
+            <p style={{alignItems: "center"}}>(415) 706 &ndash; 5054 | <ButtonMailto label="rmmichae@uci.edu" mailto="mailto:rmmichae@uci.edu" /> | <a href={"https://rickmichael.me"}>rickmichael.me</a> | <a href={"https://linkedin.com/in/richard-michael-401957b9"}>linkedin</a></p>
           </div>
           <div>
-            <p className={rstyle.firstp}><span className={rstyle.fs}>Richard Michael</span></p>
             <h3>Education</h3>
             <div className={rstyle.alignBox}>
-            <h4 className={rstyle.lefta}>University of California Irvine</h4>
-            <span className={rstyle.righta}>Irvine, CA</span>
+            <h4>University of California Irvine</h4>
+            <span>Irvine, CA</span>
             </div>
             <div className={rstyle.alignBox}>
-              <span className={rstyle.lefta}>
+              <p>
                 Bachelor of Science, Computer Science (gpa: 3.55)
-              </span>
+              </p>
               <span>
-
+                <b>Sept. 2018 - June 2021</b>
               </span>
             </div>
 
-            <h4>Notable Courses</h4>
-            <p>
-              Computer Networks, Database Management, Compilers & Interpreters, Artificial Intelligence, Operating Systems,
-              Computational Geometry, Computer Architecture
-            </p>
-            <h3>Skills</h3>
-            <h4>Programming Languages</h4>
-            <p>Java, Python, C++, C, Javascript, SQL, HTML, CSS </p>
-            <h4>Frameworks & Tools</h4>
-            <p>React, Django, Maven, Gradle, Spring, Node, Webpack, JavaFX, Nginx, Venv, Git, AWS, Google Cloud, Angular</p>
             <h3>Experience</h3>
-            <h4>Sever Design and Management Lead</h4>
-            <p><em>UCI UAV Forge, Irvine, CA Sept - June 2020</em></p>
+            <div className={rstyle.alignBox}>
+            <h4>Head Client-Server Architecture Specialist</h4>
+              <span>
+                <b>Sept. 2020 – June 2020</b>
+              </span>
+            </div>
+            <div className={rstyle.alignBox}>
+              <p className={rstyle.titleinfo}><i>UCI UAV Forge | Python Dronekit Docker-Compose</i></p>
+              <span><i>Irvine, CA</i></span>
+            </div>
             <ul>
-              <li>Full deployment and documentation of a client-server drone application using Django, Nginx, Postgres Sql, and Angular</li>
+              <li>Full deployment and documentation of a drone - client – server communication protocol</li>
+              <li>Worked extensively with Django, docker, and drone kit, as well as ran tests</li>
+              <li>Configured a drone simulator using px4 which mock tested the entire data flow</li>
+              <li>Attended weekly meetings and held private conferences with group members</li>
             </ul>
-            <h4>Lead Contributer</h4>
-            <p><em>UT MSCSO Course Review Website, Irvine, CA Sept - Current 2020</em></p>
+            <div className={rstyle.alignBox}>
+            <h4>Web Platform Lead Contributor</h4>
+              <span><b>Jan. 2021 - Current</b></span>
+            </div>
+            <div className={rstyle.alignBox}>
+            <p className={rstyle.titleinfo}><i>UT MSCSO Course Review Website | Node/Express Nginx Postgresql GCP React</i></p>
+              <span><i>Irvine, CA</i></span>
+            </div>
             <ul>
-              <li>Wrote back and frontend for a course review website using heroku, nodejs and react</li>
+              <li>One of two main members who designed and implemented a full stack review website</li>
+              <li>The site handles credential login check, manages profiles and content</li>
+              <li>Fully implemented on docker compose and launched/managed with Kubernetes</li>
             </ul>
             <h3>Projects</h3>
-            <h4>Fabflix Movie Website</h4>
+            <div className={rstyle.alignBox}>
+              <h4>Fabflix Movie Website</h4>
+              <span><b>Mar. 2020 - June 2020</b></span>
+            </div>
+            <div className={rstyle.alignBox}>
+              <p className={rstyle.titleinfo}><i>Project In Web Applications | Java Spring-boot React AWS Mysql Material-UI Maven Gradle</i></p>
+            </div>
             <ul>
-              <li>Developed a movie website of 20 thousand movies which included full-text search, auto-complete, login and redirection,
-                password encrytion, checkout, and advanced browse features </li>
-              <li>implemented connection pooling and master slave database design</li>
-              <li>Wrote a SAX XML parser that read XML, sorted data, and input them to mysql using batch insert</li>
+              <li>Developed a movie website of 20 thousand movies managed by fast, secure mysql queries</li>
+              <li>Features included full-text search, auto-complete, login and redirection, password encryption, checkout, and advanced browse tools</li>
+              <li>Implemented connection pooling, server threading, and master slave database design</li>
+              <li>Wrote a SAX XML parser that read XML, sorted data, and uploaded it to mysql using batch insert</li>
               <li>Designed a compact version of the website and launched it on the Andoid platform</li>
               <li>Wrote a python program to parse imdb for data and images, then store in database</li>
             </ul>
-            <h4>Distribution Fit</h4>
+            <div className={rstyle.alignBox}>
+              <h4>Web Crawler / Indexer / Search</h4>
+              <span><b>Jan. 2021 – Mar. 2021</b></span>
+            </div>
+            <div className={rstyle.alignBox}>
+              <p className={rstyle.titleinfo}><i>Information Retrieval | Python Flask Pytest</i></p>
+            </div>
             <ul>
-              <li>Used Chi-Squared and KS test to compare a set of data to exponential uniform or normal distribution</li>
-              <li>Used matplotlib to output a graph to visually show line comparison</li>
-              <li>Made good use of class abstraction which made for easy addition of any further line comparison tests</li>
+              <li>Implemented a web crawler using frontier/worker layout, sim hash, stemming, and politeness</li>
+              <li>Designed an indexer which managed memory using batch insert and n-way file merge</li>
+              <li>Designed a search tool which used huge, on-disk files to retrieve information in O(logn) or O(1) time</li>
+              <li>All programs made heavy use of threading and locks to significantly improve time</li>
+              <li>A browser version gui which used the flask framework</li>
             </ul>
-            <h4>Company Disk/Printer Manager</h4>
+            <div className={rstyle.alignBox}>
+              <h4>Crux Compiler</h4>
+              <span><b>Jan. 2020 – Mar. 2020</b></span>
+            </div>
+            <div className={rstyle.alignBox}>
+              <p className={rstyle.titleinfo}><i>Compilers | Java Maven</i></p>
+            </div>
+            <ul>
+              <li>A program written in java that compiles files written in the crux language and assembles with x86</li>
+              <li>The compiler handles types, while & if else blocks, multi-dimension arrays, recursion, and system calls</li>
+              <li>The compiler uses polymorphism and the “visit” strategy, needing only one function to parse a tree</li>
+            </ul>
+            <div className={rstyle.alignBox}>
+              <h4>Personal Portfolio Website</h4>
+              <span><b>Oct. 2020 – Dec. 2020</b></span>
+            </div>
+            <div className={rstyle.alignBox}>
+              <p className={rstyle.titleinfo}><i>Self | Docker-Compose React Django GCP Nginx CSS Gunicorn</i></p>
+            </div>
+            <ul>
+              <li>A public website, rickmichael.me, from which I can display source code, a resume, and about me</li>
+              <li>Configured a project display which allows anyone to see the code I have written</li>
+            </ul>
+            <div className={rstyle.alignBox}>
+              <h4>Operating Systems</h4>
+              <span><b>Sept. 2020 – June 2021</b></span>
+            </div>
+            <div className={rstyle.alignBox}>
+              <p className={rstyle.titleinfo}><i>Three Courses | C Cmake GCC XV6 ELF</i></p>
+            </div>
+            <ul>
+              <li>Studied the xv6 operating system, implemented new system calls, and wrote/load elf files</li>
+              <li>Wrote a shell with redirection, piping, history, globbing, and background tasks, and exceptions</li>
+              <li>Implemented a file memory management program which simulated blocks caching, lookups, and reading from disk</li>
+            </ul>
+            <div className={rstyle.alignBox}>
+              <h4>Company Disk/Printer Manager</h4>
+              <span><b>Sept. 2019 - Dec. 2019</b></span>
+            </div>
+
             <ul>
               <li>Wrote a program which simulates user interaction with disk read/write and printers</li>
               <li>Implemented with threads and a socket manager to simulate individual software processes</li>
               <li>Completed with a frontend using javaFX that shows what the user is doing and read/write or print time to completion</li>
             </ul>
-            <h4>Crux Compiler</h4>
-            <ul>
-              <li>A program written in java that compiles files written in the crux language and assembles with x86</li>
-              <li>The compiler handles types, while and if else blocks, multi-dimension arrays, recursion, system functions written in C </li>
-              <li>The compiler uses the visit strategy to parse, using polymorphism to only need one "visit" function</li>
-            </ul>
-            <h4>Crux Compiler</h4>
-            <ul>
-              <li>A program written in java that compiles files written in the crux language and assembles with x86</li>
-              <li>The compiler handles types, while and if else blocks, multi-dimension arrays, recursion, system functions written in C </li>
-              <li>The compiler uses the visit strategy to parse, using polymorphism to only need one "visit" function</li>
-            </ul>
+            <h3>Other Releval Skills & Coursework</h3>
+            <h4>Proficient Languages</h4>
+            <p>Java Javascript Python C++ C CSS HTML</p>
+            <h4>Frameworks & Tools</h4>
+            <p>GCP AWS Webpack Venv Git JavafX Angular Nginx Apache/Tomcat Maven</p>
+            <h4>Coursework</h4>
+            <p>Relational Databases, Beyond SQL, Algorithms (graphs, computational geometry, general, AI)
+              Operating Systems, Project in OS
+            </p>
           </div>
         </div>
       </div>
