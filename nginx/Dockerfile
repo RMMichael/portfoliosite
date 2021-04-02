@@ -1,4 +1,4 @@
 FROM nginx:1.19
-#COPY ../nginx.conf /etc/nginx
+#COPY ../nginx2.conf /etc/nginx
 
 #/conf.d/default.conf

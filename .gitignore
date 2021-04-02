@@ -5,6 +5,6 @@
 **/target/*
 **/venv/*
 **/public/*
-server/Projects/*
+backend/Projects/*
 **/lib/*
 **/__pycache__/*

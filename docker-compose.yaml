@@ -1,24 +1,24 @@
 version: "3.7"
 services:
   server:
-    build: ./server
+    build: backend
     depends_on:
       - client
     ports:
       - ${BACKEND_PORT}:${BACKEND_PORT}
     volumes:
-      - ./server:/code
-      - ./client/public:/client/public
+      - ./backend:/code
+      - ./frontend/public:/frontend/public
     environment:
       - SECRET_KEY=${SECRET_KEY:?required}
       - NODE_ENV=${NODE_ENV}
       - PORT=${BACKEND_PORT}
       - FORWARDED_ALLOW_IPS="*"
   client:
-    build: ./client
+    build: frontend
     command: "${FRONTEND_CMD}"
     volumes:
-      - ./client:/code
+      - ./frontend:/code
       - /code/node_modules
     environment:
       - NODE_ENV=${NODE_ENV}
@@ -29,6 +29,6 @@ services:
       - client
       - server
     volumes:
-      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+      - ./nginx/nginx2.conf:/etc/nginx/nginx2.conf
     ports:
       - 80:80

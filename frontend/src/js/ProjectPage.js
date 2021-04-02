@@ -64,8 +64,8 @@ function Projectlist() {
         },
         {
           title: "Interop UAV Project",
-          desc: "This program is a large project which involes a mechanical UAV that interacts with a server to relay flight data and images. " +
-              "I worked on the server implementation and image weaving.",
+          desc: "This program is a large project which involes a mechanical UAV that interacts with a backend to relay flight data and images. " +
+              "I worked on the backend implementation and image weaving.",
           spec : "Python Django Nginx Venv Docker Protobuf Postgres Angular"
         },
         {
