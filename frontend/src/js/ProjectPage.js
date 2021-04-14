@@ -36,11 +36,15 @@ function Projectlist() {
           spec : "Java"
         },
         {
-          title: "Distribution Fit",
-          desc: "A program that fits plotted data against exponential, uniform, and normal distributions. " +
-              "It uses a Chi Squared test and Kolmogorov–Smirnov test to determine closeness and prints a graph to screen using matplotlib " +
-              "that shows a graph of the actual data and the distribution being compared",
-          spec : "Python Matplotlib"
+          title: "Complete Web Crawler, Index, and Search",
+          desc: "This file includes two projects. A web crawler which caches webpages and filters or categorizes them into various categories.." +
+              "A complete, read from disk, indexer and search engine, which utilizes many optimizations including N-way file merges, threading.",
+          spec : "Python"
+        },
+        {
+          title: "Course Review Site",
+          desc: "This project is a freelance project that allows students to review and post about their experiences with courses at their university",
+          spec : "Javascript Node React AWS"
         },
         {
           title: "Fabflix Web Platform",
@@ -48,19 +52,6 @@ function Projectlist() {
               "autocomplete and full-text search, employee login and middleware, and checkout. A SAX parser for reading XMLand inserting " +
               "into mysql database. And a simple android app version which converts the website to mobile.",
           spec : "Java Javascript XML Mysql Apache Apache-Tomcat React SpringBoot Android AWS Google Cloud"
-        },
-        {
-          title: "Company Disk/Printer Manager",
-          desc: "This multithreaded program dynamically sets the number of users and printers available and manages users connecting to the " +
-              "disk to read, save, or print data. The implmentaion uses a lockto ensure conflicts dont occur. The program is built with a front end " +
-              "using javaFX.",
-          spec : "Java JavaFX"
-        },
-        {
-          title: "Data Structures",
-          desc: "This multi-program library implements an iterative AVL tree, a quicksort using dutch flag implementation, and a linked list " +
-              "library with various functions including mergesort.",
-          spec : "C++ AVL Tree Quicksort Linked-list Mergesort"
         },
         {
           title: "Interop UAV Project",
@@ -78,15 +69,24 @@ function Projectlist() {
           spec : "C Makefile cmake"
         },
         {
-          title: "Complete Web Crawler, Index, And Search",
-          desc: "This file includes two projects. A web crawler which caches webpages and filters or categorizes them into various categories.." +
-              "A complete, read from disk, indexer and search engine, which utilizes many optimizations including N-way file merges, threading.",
-          spec : "Python"
+          title: "Company Disk/Printer Manager",
+          desc: "This multithreaded program dynamically sets the number of users and printers available and manages users connecting to the " +
+              "disk to read, save, or print data. The implmentaion uses a lockto ensure conflicts dont occur. The program is built with a front end " +
+              "using javaFX.",
+          spec : "Java JavaFX"
         },
         {
-          title: "Course Review Site",
-          desc: "This project is a freelance project that allows students to review and post about their experiences with courses at their university",
-          spec : "Javascript Node React AWS"
+          title: "Data Structures",
+          desc: "This multi-program library implements an iterative AVL tree, a quicksort using dutch flag implementation, and a linked list " +
+              "library with various functions including mergesort.",
+          spec : "C++ AVL Tree Quicksort Linked-list Mergesort"
+        },
+        {
+          title: "Distribution Fit",
+          desc: "A program that fits plotted data against exponential, uniform, and normal distributions. " +
+              "It uses a Chi Squared test and Kolmogorov–Smirnov test to determine closeness and prints a graph to screen using matplotlib " +
+              "that shows a graph of the actual data and the distribution being compared",
+          spec : "Python Matplotlib"
         },
 
 
