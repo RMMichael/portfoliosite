@@ -2,6 +2,7 @@ version: "3.7"
 services:
   server:
     build: backend
+    image: rickmikegull/portfolio-backend
     depends_on:
       - client
     ports:
@@ -16,6 +17,7 @@ services:
       - FORWARDED_ALLOW_IPS="*"
   client:
     build: frontend
+    image: rickmikegull/portfolio-frontend
     command: "${FRONTEND_CMD}"
     volumes:
       - ./frontend:/code
@@ -25,6 +27,7 @@ services:
 
   nginx:
     build: ./nginx
+    image: rickmikegull/portfolio-server
     depends_on:
       - client
       - server
