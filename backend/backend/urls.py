@@ -16,12 +16,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import include, path, re_path
 from django.shortcuts import render
+from django.http import HttpResponse
 
 # index catchall view
 def catchall(request):
-    # filename = os.path.join(settings.WHITENOISE_ROOT, 'index.html')
-    return render(request, 'index.html')
-    # return HttpResponse("Hello, world. test")
+    filename = os.path.join(settings.WHITENOISE_ROOT, 'index.html')
+    print(filename)
+    return render(request, filename)
 
 
 urlpatterns = [

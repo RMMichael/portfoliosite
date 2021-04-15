@@ -6,7 +6,7 @@ module.exports = (env) => ({
     entry: './src/js/index.js',
     devtool: 'inline-source-map',
     devServer: {
-        contentBase: './public/static',
+        contentBase: './public',
         contentBasePublicPath: '/',
         publicPath: '/',
         historyApiFallback: {
@@ -22,7 +22,7 @@ module.exports = (env) => ({
     cache: true,
     mode: env.NODE_ENV,
     output: {
-        path: path.resolve(__dirname, './public/static'),
+        path: path.resolve(__dirname, './public'),
         filename: 'index.js'
     },
     plugins: [

@@ -1,10 +1,11 @@
 version: "3.7"
 services:
-  server:
+  backend:
     build: backend
     image: rickmikegull/portfolio-backend
+    command: ["uwsgi", "uwsgi.ini"]
     depends_on:
-      - client
+      - frontend
     ports:
       - ${BACKEND_PORT}:${BACKEND_PORT}
     volumes:
@@ -15,7 +16,7 @@ services:
       - NODE_ENV=${NODE_ENV}
       - PORT=${BACKEND_PORT}
       - FORWARDED_ALLOW_IPS="*"
-  client:
+  frontend:
     build: frontend
     image: rickmikegull/portfolio-frontend
     command: "${FRONTEND_CMD}"
@@ -29,9 +30,9 @@ services:
     build: ./nginx
     image: rickmikegull/portfolio-server
     depends_on:
-      - client
-      - server
+      - frontend
+      - backend
     volumes:
-      - ./nginx/nginx2.conf:/etc/nginx/nginx2.conf
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
     ports:
       - 80:80
