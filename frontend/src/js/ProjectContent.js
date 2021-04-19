@@ -13,8 +13,6 @@ import Dir from './icons/folder.svg';
 import fstyle from '../css/framestyle.css'
 import pcstyle from '../css/projectcontent.css'
 import {TopBar} from "./TopBar";
-import SvgIcon from '@material-ui/core/SvgIcon';
-import FolderIcon from '@material-ui/icons/Folder';
 
 
 
