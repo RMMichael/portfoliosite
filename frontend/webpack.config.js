@@ -25,7 +25,8 @@ module.exports = (env) => ({
         path: path.resolve(__dirname, './public'),
         filename: 'index.js'
     },
-    plugins: [
+    plugins:
+        [
         new HtmlWebpackPlugin({
             title: 'portfolio',
             // options: {

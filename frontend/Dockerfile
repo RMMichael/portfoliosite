@@ -15,6 +15,8 @@ RUN npm i npm@latest -g
 
 COPY package.json /code/package.json
 COPY package-lock.json /code/package-lock.json
+
+
 RUN npm ci
 
 # check every 30s to ensure this service returns HTTP 200
