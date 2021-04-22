@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import include, path, re_path
 from django.shortcuts import render
 from django.http import HttpResponse
+import os
 
 # index catchall view
 def catchall(request):
