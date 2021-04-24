@@ -17,12 +17,12 @@ from django.contrib import admin
 from django.urls import include, path, re_path
 from django.shortcuts import render
 from django.http import HttpResponse
-import settings
+from django.conf import settings
 import os
 
 # index catchall view
 def catchall(request):
-    filename = os.path.join(settings.WHITENOISE_ROOT, 'index.html')
+    filename = os.path.join('/frontend/public', 'index.html')
     print(filename)
     return render(request, filename)
 
