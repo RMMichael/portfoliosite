@@ -24,7 +24,7 @@ print(os.environ)
 # SECRET_KEY= os.environ.get('SECRET_KEY')
 SECRET_KEY=os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
-
+SECRET_KEY='(71n$&or^jw8ys)o3^*#t4qkj8g)l#85-firbs=xd1n$cxif$o'
 
 DEBUG = os.environ.get('NODE_ENV') == "development"
 

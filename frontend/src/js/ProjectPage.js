@@ -33,18 +33,23 @@ function Projectlist() {
           title: "Crux Compiler",
           desc: "A compiler written for the crux coding language and assembled using x86 Handles primitive integer types, boolean, " +
               "multi-dimension arrays, if-else blocks and while loops.",
-          spec : "Java"
+          spec : "Java Jar Maven"
+        },
+        {
+          title: "Personal Website",
+          desc: "This very website which features playful css, a full display of my own code, an about, and resume section",
+          spec: "React Django Nginx Google-Cloud Docker-Compose"
         },
         {
           title: "Complete Web Crawler, Index, and Search",
           desc: "This file includes two projects. A web crawler which caches webpages and filters or categorizes them into various categories.." +
               "A complete, read from disk, indexer and search engine, which utilizes many optimizations including N-way file merges, threading.",
-          spec : "Python"
+          spec : "Python Threading"
         },
         {
-          title: "Course Review Site",
+          title: "UT Reviews",
           desc: "This project is a freelance project that allows students to review and post about their experiences with courses at their university",
-          spec : "Javascript Node React AWS"
+          spec : "Javascript Node React AWS Postgresql Docker-Compose"
         },
         {
           title: "Fabflix Web Platform",
@@ -56,20 +61,20 @@ function Projectlist() {
         {
           title: "Interop UAV Project",
           desc: "This program is a large project which involes a mechanical UAV that interacts with a backend to relay flight data and images. " +
-              "I worked on the backend implementation and image weaving.",
-          spec : "Python Django Nginx Venv Docker Protobuf Postgres Angular"
+              "I worked on the design of the client which uses threading and interacts with a server, dronekit, and UAV using maxproxy",
+          spec : "Python Django Nginx Venv Docker Protobuf Postgres Angular Dronekit Mavproxy"
         },
         {
-          title: "Operating Systems Projects",
-          desc: "This file consists of a hand full of projects in OS.\n" +
-              "1. An interactive shell with redirection, piping, history, globbing, and background tasks\n" +
-              "2. A complete file manager written in c which mimics disk access and memory storage\n" +
-              "3. A system call addition to the XV6 operating system\n" +
-              "4. A program that reads and executes elf files",
+          title: "Op Systems",
+          desc:["This file consists of a hand full of projects in OS.",
+              "1. An interactive shell with redirection, piping, history, globbing, and background tasks",
+              "2. A complete file manager written in c which mimics disk access and memory storage",
+              "3. A system call addition to the XV6 operating system",
+              "4. A program that reads and executes elf files"],
           spec : "C Makefile cmake"
         },
         {
-          title: "Company Disk/Printer Manager",
+          title: "Company Disk&Printer Manager",
           desc: "This multithreaded program dynamically sets the number of users and printers available and manages users connecting to the " +
               "disk to read, save, or print data. The implmentaion uses a lockto ensure conflicts dont occur. The program is built with a front end " +
               "using javaFX.",
@@ -77,9 +82,16 @@ function Projectlist() {
         },
         {
           title: "Data Structures",
-          desc: "This multi-program library implements an iterative AVL tree, a quicksort using dutch flag implementation, and a linked list " +
-              "library with various functions including mergesort.",
-          spec : "C++ AVL Tree Quicksort Linked-list Mergesort"
+          desc: ["This multi-program library showcases", "1. A sorting study comparing shell, merge, quick, and hybrid sort", "2. A bin packing study between first, next, and best fit done with a zip tree",
+            "3. an iterative AVL tree", "4. a quicksort using dutch flag implementation"],
+          spec : "C++ AVLTree Quicksort ZipTree Mergesort"
+        },
+        {
+          title: "Web Work",
+          desc: ["This section holds two web projects", "1. A tweet report which speedily sorts and sifts all tweets of a fitness app then allows the user to search or view analytics",
+            "2. A UI for spotify using its API. The user is able to use 5 pages including log in/profile, search by artist, album, or genre, then view their respective pages",
+            "3. A mobile based app which allows a user to track sleep data with a questionaire then stores and displays the analytics of the data"],
+          spec: "Angular Ionic"
         },
         {
           title: "Distribution Fit",
@@ -100,22 +112,45 @@ function Projectlist() {
 }
 
 function InnerBox(props) {
-
-    return (
-        <div className={pstyle.mainListItem}>
-          <div className={pstyle.projectTitle}>
-            <Link to={"/" + props.title}>
-              <h2>{props.title}</h2>
-            </Link>
+    if (props.title === "Operating Systems Projects" || props.title === "Data Structures" || props.title === "Web Work") {
+      return (
+          <div className={pstyle.mainListItem}>
+            <div className={pstyle.projectTitle}>
+              <Link to={"/" + props.title}>
+                <h2>{props.title}</h2>
+              </Link>
+            </div>
+            <div className={pstyle.projectDescription}>
+              {
+                props.desc.map( line => {
+                  return (
+                      <div>
+                        {line}
+                      </div>
+                  );
+                })}
+            </div>
+            <div className={pstyle.projectComponents}>
+              {props.spec}
+            </div>
+          </div>)
+    } else {
+      return (
+          <div className={pstyle.mainListItem}>
+            <div className={pstyle.projectTitle}>
+              <Link to={"/" + props.title}>
+                <h2>{props.title}</h2>
+              </Link>
+            </div>
+            <div className={pstyle.projectDescription}>
+              {props.desc}
+            </div>
+            <div className={pstyle.projectComponents}>
+              {props.spec}
+            </div>
           </div>
-          <div className={pstyle.projectDescription}>
-            {props.desc}
-          </div>
-          <div className={pstyle.projectComponents}>
-            {props.spec}
-          </div>
-        </div>
-    );
+      );
+    }
 
 }
 
