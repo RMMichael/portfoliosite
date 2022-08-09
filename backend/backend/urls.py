@@ -22,9 +22,10 @@ import os
 
 # index catchall view
 def catchall(request):
-    filename = os.path.join('/frontend/public', 'index.html')
-    print(filename)
-    return render(request, filename)
+    #filename = os.path.join('/frontend/public', 'index.html')
+    #print("HERE" + filename)
+    # loooks in TEMPLATES DIRS from settings
+    return render(request, 'index.html')
 
 
 urlpatterns = [

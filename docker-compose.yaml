@@ -18,11 +18,15 @@ services:
     build: frontend
     image: rickmikegull/portfolio-frontend
     command: "${FRONTEND_CMD}"
+    ports:
+      - ${FRONTEND_PORT}:${FRONTEND_PORT}
     volumes:
       - ./frontend:/code
       - /code/node_modules
     environment:
       - NODE_ENV=${NODE_ENV}
+      - FRONTEND_PORT=${FRONTEND_PORT}
+      - BACKEND_PORT=${BACKEND_PORT}
 
   nginx:
     build: ./nginx

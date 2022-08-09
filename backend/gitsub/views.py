@@ -13,6 +13,10 @@ def projectfile(request, filedir_name):
         print(filedir_name)
         try:
             file = open("./Projects/" + filedir_name, 'r')
+        except Exception as e:
+            return JsonResponse({'fileContent': "Unable to find file: " + filedir_name, 'fileExt' : ".txt", 'filePath' : filedir_name})
+        
+        try:
             text = file.readlines(15000)
         except Exception as e:
             file.close()

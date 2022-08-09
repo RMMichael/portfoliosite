@@ -1,11 +1,13 @@
 var path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const postcssPresetEnv = require('postcss-preset-env');
+// var dev = require('NODE_ENV').config({path: '../.env'});
 
 module.exports = (env) => ({
     entry: './src/js/index.js',
     devtool: 'inline-source-map',
     devServer: {
+        host: '0.0.0.0',
         contentBase: './public',
         contentBasePublicPath: '/',
         publicPath: '/',
@@ -15,9 +17,9 @@ module.exports = (env) => ({
         },
         proxy: {
             //insert api path
-            '/api': 'http://127.0.0.1:8000'
+            '/api': `http://backend:${process.env.BACKEND_PORT}`
         },
-        port: 8081
+        port: process.env.FRONTEND_PORT
     },
     cache: true,
     mode: env.NODE_ENV,

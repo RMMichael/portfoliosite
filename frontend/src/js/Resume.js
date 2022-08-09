@@ -37,7 +37,7 @@ function Resume() {
             Richard Michael
           </div>
           <div className={rstyle.topInfo}>
-            <p style={{alignItems: "center"}}>(415) 706 &ndash; 5054 | <ButtonMailto label="rmmichae@uci.edu" mailto="mailto:rmmichae@uci.edu" /> | <a href={"https://rickmichael.me"}>rickmichael.me</a> | <a href={"https://linkedin.com/in/richard-michael-401957b9"}>linkedin</a></p>
+            <p style={{alignItems: "center"}}>(415) 706 &ndash; 5054 | <ButtonMailto label="rmmichae@uci.edu" mailto="mailto:rmmichae@uci.edu" /> | <a href={"https://rickmichael.dev"}>hhtps://www.rickmichael.dev</a> | <a href={"https://linkedin.com/in/richard-michael-401957b9"}>linkedin</a></p>
           </div>
           <div>
             <h3>Education</h3>
@@ -55,6 +55,20 @@ function Resume() {
             </div>
 
             <h3>Experience</h3>
+            <div className={rstyle.alignBox}>
+              <h4>Associate Java Developer</h4>
+              <span>
+                <b>Mar. 2022 – Aug. 2022</b>
+              </span>
+            </div>
+            <div className={rstyle.alignBox}>
+              <p className={rstyle.titleinfo}><i>Infosys LTD | Java Angullar Javascript MySQL-Server JUint certifications</i></p>
+              <span><i>Irvine, CA</i></span>
+            </div>
+            <ul>
+              <li>Developed RESTful APIs with Spring backends Angular or React and frontends</li>
+              <li>Implemented a project which had account management, registration system, and purchases</li>
+            </ul>
             <div className={rstyle.alignBox}>
             <h4>Head Client-Server Architecture Specialist</h4>
               <span>
@@ -90,7 +104,7 @@ function Resume() {
               <span><b>Mar. 2020 - June 2020</b></span>
             </div>
             <div className={rstyle.alignBox}>
-              <p className={rstyle.titleinfo}><i>Project In Web Applications | Java Spring-boot React AWS Mysql Material-UI Maven Gradle</i></p>
+              <p className={rstyle.titleinfo}><i>Project In Web Applications | Java Spring-boot React AWS MySQL Material-UI Maven Gradle ReCAPTCHA</i></p>
             </div>
             <ul>
               <li>Developed a movie website of 20 thousand movies managed by fast, secure mysql queries</li>
@@ -102,7 +116,7 @@ function Resume() {
             </ul>
             <div className={rstyle.alignBox}>
               <h4>Web Crawler / Indexer / Search</h4>
-              <span><b>Jan. 2021 – Mar. 2021</b></span>
+              <span><b>Jan. 2021</b></span>
             </div>
             <div className={rstyle.alignBox}>
               <p className={rstyle.titleinfo}><i>Information Retrieval | Python Flask Pytest</i></p>
@@ -116,7 +130,7 @@ function Resume() {
             </ul>
             <div className={rstyle.alignBox}>
               <h4>Crux Compiler</h4>
-              <span><b>Jan. 2020 – Mar. 2020</b></span>
+              <span><b>Jan. 2020</b></span>
             </div>
             <div className={rstyle.alignBox}>
               <p className={rstyle.titleinfo}><i>Compilers | Java Maven</i></p>
@@ -128,7 +142,7 @@ function Resume() {
             </ul>
             <div className={rstyle.alignBox}>
               <h4>Personal Portfolio Website</h4>
-              <span><b>Oct. 2020 – Dec. 2020</b></span>
+              <span><b>Oct. 2020</b></span>
             </div>
             <div className={rstyle.alignBox}>
               <p className={rstyle.titleinfo}><i>Self | Docker-Compose React Django GCP Nginx CSS Gunicorn</i></p>
@@ -151,7 +165,7 @@ function Resume() {
             </ul>
             <div className={rstyle.alignBox}>
               <h4>Company Disk/Printer Manager</h4>
-              <span><b>Sept. 2019 - Dec. 2019</b></span>
+              <span><b>Sept. 2019</b></span>
             </div>
 
             <ul>
@@ -161,12 +175,12 @@ function Resume() {
             </ul>
             <h3>Other Releval Skills & Coursework</h3>
             <h4>Proficient Languages</h4>
-            <p>Java Javascript Python C++ C CSS HTML</p>
+            <p>Java Javascript Python C++ C CSS HTML SQL NoSQL</p>
             <h4>Frameworks & Tools</h4>
-            <p>GCP AWS Webpack Venv Git JavafX Angular Nginx Apache/Tomcat Maven</p>
+            <p>GCP AWS Webpack Venv Git JavaFX Angular Nginx Apache/Tomcat Maven, Mongodb, Post</p>
             <h4>Coursework</h4>
-            <p>Relational Databases, Beyond SQL, Algorithms (graphs, computational geometry, general, AI)
-              Operating Systems, Project in OS
+            <p>Relational Databases, NoSQL, Algorithms (graphs, computational geometry, general, AI)
+              Computer Networks, Computer Architecture(UCI & UCB)
             </p>
           </div>
         </div>

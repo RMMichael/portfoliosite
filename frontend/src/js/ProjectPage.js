@@ -41,7 +41,7 @@ function Projectlist() {
           spec: "React Django Nginx Google-Cloud Docker-Compose"
         },
         {
-          title: "Complete Web Crawler, Index, and Search",
+          title: "Complete Web Crawler, Index, and Web Work",
           desc: "This file includes two projects. A web crawler which caches webpages and filters or categorizes them into various categories.." +
               "A complete, read from disk, indexer and search engine, which utilizes many optimizations including N-way file merges, threading.",
           spec : "Python Threading"
@@ -98,10 +98,13 @@ function Projectlist() {
           desc: "A program that fits plotted data against exponential, uniform, and normal distributions. " +
               "It uses a Chi Squared test and Kolmogorov–Smirnov test to determine closeness and prints a graph to screen using matplotlib " +
               "that shows a graph of the actual data and the distribution being compared",
-          spec : "Python Matplotlib"
+          spec: "Python Matplotlib"
         },
-
-
+        {
+          title: "Rowy Array Addition",
+          desc : "This is an open source project which I created functionality to display json arrays in Google Firebase, as well as, select an item and run either user defined functions or crud functions",
+          spec : " Javascript Node React Google Firebase GCP"
+        }
     ];
 
     return (

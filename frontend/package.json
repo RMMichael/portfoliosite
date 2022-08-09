@@ -9,6 +9,7 @@
     "@material-ui/icons": "^4.11.2",
     "babel-loader": "^8.2.2",
     "css-loader": "^5.0.2",
+    "dotenv": "^16.0.1",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.3.1",
     "lodash": "^4.17.21",
@@ -27,9 +28,10 @@
     "webpack-dev-server": "^3.11.2"
   },
   "scripts": {
-    "watch": "webpack --watch -d",
+    "watch": "webpack watch",
     "start": "webpack serve",
     "build": "webpack build",
-    "st": "webpack serve"
+    "st": "webpack serve",
+    "waild": "webpack build && webpack serve --watch"
   }
 }

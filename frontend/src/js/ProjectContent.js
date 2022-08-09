@@ -77,8 +77,6 @@ function ProjectContent () {
     const [types, setTypes] = useState([]);
 
     const location = useLocation();
-    const mapping = { "Crux Compiler" : "crux_compiler", "Complete Web Craweler, Index, and Search" : "information_retrieval", "UT Reviews" : "ut_reviews", "Fabflix Web Platform" : "fabflix",
-        "Interop UAV Project": "interop", "Operating Systems Projects" : "os"}
 
 
     useEffect(() => {
